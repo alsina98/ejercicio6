@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.btn{
+    border-radius: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+
+.btn #visible::after{
+    content: "Passa por encima";
+}
+
+.btn:hover #visible{
+    visibility: hidden;
+}
+
+.btn:hover #visible::after{
+    content: "¡Hecho!";
+    visibility: visible;
+}
+
+div.center{
+    text-align: center;
+}
